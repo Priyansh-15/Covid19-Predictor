@@ -1,6 +1,5 @@
 .header-dark {
-  background-color: #772f1a;
-  background-image: linear-gradient(315deg, #772f1a 0%, #f2a65a 74%);
+  background: linear-gradient(135deg, orange 60%, cyan);
 
   background-size: cover;
   padding-bottom: 80px;
@@ -23,8 +22,7 @@
 .container {
   padding: 30px;
   position: relative;
-  background-color: #772f1a;
-  background-image: linear-gradient(315deg, #772f1a 0%, #f2a65a 74%);
+  background: linear-gradient(135deg, orange 60%, cyan);
   text-align: center;
   background-size: 500% 500%;
 }
@@ -34,7 +32,7 @@
 }
 
 .heading_font {
-  color: #ff0606;
+  color: #adadad;
   font-family: "Pacifico", cursive;
   font-size: 35px;
   font-weight: normal;
@@ -42,7 +40,7 @@
 }
 
 .description p {
-  color: #ff0000;
+  color: #b3aeae;
   font-style: italic;
   font-size: 14px;
   margin: -5px 0 0;
@@ -97,10 +95,10 @@
   border-color: #8d08b6;
 }
 .my-cta-button {
-  background: #f5cb57;
+  background: #eb461c;
   border: 2px solid #000000;
   border-radius: 1000px;
-  box-shadow: 3px 3px #e2b12a;
+  box-shadow: 3px 3px #ec281a;
   margin-top: 10px;
   padding: 10px 36px;
   color: #000000;
@@ -209,6 +207,5 @@
 }
 
 .header-dark .hero .ratio iframe {
-  background-color: #772f1a;
-  background-image: linear-gradient(315deg, #772f1a 0%, #f2a65a 74%);
+  background: linear-gradient(135deg, orange 60%, cyan);
 }
