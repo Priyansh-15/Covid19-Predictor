@@ -4,13 +4,9 @@ import pickle
 
 app = Flask("__name__")
 
-q = ""
-
 @app.route("/")
 def loadPage():
 	return render_template('index.html', query="")
-
-
 
 @app.route("/", methods=['POST'])
 def CovidPrediction():

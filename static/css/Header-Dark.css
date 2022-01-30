@@ -242,3 +242,18 @@
   background: linear-gradient(to right, #663300 0%, #990099 70%);
   animation: change-gradient 5s ease-in-out infinite;
 }
+
+.footer {
+  flex-shrink: 0;
+  position: relative;
+  padding: 20px;
+  background: linear-gradient(to right, #663300 0%, #990099 70%);
+  background-size: 500% 500%;
+  animation: change-gradient 10s ease-in-out infinite;
+}
+
+.footer-description {
+  color: #ff9900;
+  margin: 0;
+  font-size: 12px;
+}
