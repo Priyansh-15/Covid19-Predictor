@@ -35,7 +35,8 @@
   position: relative;
   background: linear-gradient(to right, #663300 0%, #990099 70%);
   text-align: center;
-  background-size: 500% 500%;
+  background-size: cover;
+  padding-bottom: 80px;
   animation: change-gradient 5s ease-in-out infinite;
 }
 
@@ -58,7 +59,6 @@
 .center {
   margin: 0;
   position: absolute;
-  top: 50%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
