@@ -31,7 +31,11 @@
           </p>
         </div>
       </div>
-      <form action="{{ url_for('CovidPrediction')}}" method="POST">
+      <form
+        action="{{ url_for('CovidPrediction')}}"
+        method="POST"
+        autocomplete="off"
+      >
         <div class="input-group text-center">
           <span class="text-center text-dark input-group-text"
             >Body Temperature</span
