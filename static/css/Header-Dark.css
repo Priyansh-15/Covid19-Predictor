@@ -1,5 +1,5 @@
 .header-dark {
-  background: linear-gradient(to bottom right, #663300 0%, #990099 100%);
+  background: linear-gradient(to right, #663300 0%, #990099 100%);
 
   background-size: cover;
   padding-bottom: 80px;
@@ -22,9 +22,10 @@
 .container {
   padding: 30px;
   position: relative;
-  background: linear-gradient(to bottom right, #663300 0%, #990099 100%);
+  background: linear-gradient(to right, #663300 0%, #990099 100%);
   text-align: center;
   background-size: 500% 500%;
+  animation: change-gradient 10s ease-in-out infinite;
 }
 
 @keyframes change-gradient {
@@ -44,7 +45,7 @@
 }
 
 .heading_font {
-  color: #ff9900;
+  color: #ff9933;
   font-family: "Pacifico", cursive;
   font-size: 35px;
   font-weight: normal;
@@ -52,7 +53,7 @@
 }
 
 .description p {
-  color: #ff9900;
+  color: #ff9933;
   font-style: italic;
   font-size: 14px;
   margin: -5px 0 0;
@@ -219,5 +220,5 @@
 }
 
 .header-dark .hero .ratio iframe {
-  background: linear-gradient(to bottom right, #663300 0%, #990099 100%);
+  background: linear-gradient(to right, #663300 0%, #990099 100%);
 }
