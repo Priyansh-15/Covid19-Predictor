@@ -1,5 +1,7 @@
 .header-dark {
-  background: #530bfc;
+  background-color: #772f1a;
+  background-image: linear-gradient(315deg, #772f1a 0%, #f2a65a 74%);
+
   background-size: cover;
   padding-bottom: 80px;
 }
@@ -21,7 +23,9 @@
 .container {
   padding: 30px;
   position: relative;
-  background: #530bfc;
+  background-color: #772f1a;
+  background-image: linear-gradient(315deg, #772f1a 0%, #f2a65a 74%);
+  text-align: center;
   background-size: 500% 500%;
 }
 
@@ -76,7 +80,7 @@
 }
 
 .header-dark .navbar .navbar-toggler {
-  border-color: #3001ff;
+  border-color: #620cd3;
 }
 
 .header-dark .navbar .navbar-toggler:hover,
@@ -90,13 +94,13 @@
 
 .header-dark .navbar .navbar-collapse,
 .header-dark .navbar form {
-  border-color: #1900ff;
+  border-color: #8d08b6;
 }
 .my-cta-button {
-  background: #ff1d1d;
+  background: #f5cb57;
   border: 2px solid #000000;
   border-radius: 1000px;
-  box-shadow: 3px 3px #fa1818;
+  box-shadow: 3px 3px #e2b12a;
   margin-top: 10px;
   padding: 10px 36px;
   color: #000000;
@@ -205,5 +209,6 @@
 }
 
 .header-dark .hero .ratio iframe {
-  background-color: #2314ec;
+  background-color: #772f1a;
+  background-image: linear-gradient(315deg, #772f1a 0%, #f2a65a 74%);
 }
