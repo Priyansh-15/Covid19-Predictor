@@ -18,6 +18,43 @@
   border: none;
 }
 
+.container {
+  padding: 30px;
+  position: relative;
+  background: linear-gradient(45deg, red, blue);
+  background-size: 500% 500%;
+  animation: change-gradient 10s ease-in-out infinite;
+}
+@keyframes change-gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.container-heading {
+  margin: 0;
+}
+
+.heading_font {
+  color: #ffffff;
+  font-family: "Pacifico", cursive;
+  font-size: 35px;
+  font-weight: normal;
+}
+
+.description p {
+  color: #ffffff;
+  font-style: italic;
+  font-size: 14px;
+  margin: -5px 0 0;
+}
+
 @media (min-width: 768px) {
   .header-dark .navbar {
     padding-top: 0.75rem;
@@ -65,6 +102,18 @@
 .header-dark .navbar form {
   border-color: #990cd1;
 }
+.my-cta-button {
+  background: #f9f9f9;
+  border: 2px solid #000000;
+  border-radius: 1000px;
+  box-shadow: 3px 3px #8c8c8c;
+  margin-top: 10px;
+  padding: 10px 36px;
+  color: #000000;
+  display: inline-block;
+  font: italic bold 20px/1 "Calibri", sans-serif;
+  text-align: center;
+}
 
 @media (min-width: 992px) {
   .header-dark .navbar.navbar .navbar-nav .nav-link {
@@ -104,7 +153,7 @@
 
 .header-dark .navbar .action-button,
 .header-dark .navbar .action-button:active {
-  background: #2d52c9;
+  background: #4b0268;
   border-radius: 20px;
   font-size: inherit;
   color: #fff;
@@ -116,7 +165,7 @@
 }
 
 .header-dark .navbar .action-button:hover {
-  background: #2d52c9;
+  background: #f504e1;
 }
 
 .header-dark .navbar label {

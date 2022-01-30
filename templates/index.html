@@ -18,7 +18,17 @@
 
   <body>
     <header class="header-dark">
-      <h1 class="display-4 text-center text-white">Covid 19 Predictor</h1>
+      <div class="container">
+        <h2 class="container-heading">
+          <span class="heading_font">Covid 19 Predictor</span>
+        </h2>
+        <div class="description">
+          <p>
+            Predictor to Give Confirmation on Whether You are having Covid 19
+            Symptoms
+          </p>
+        </div>
+      </div>
       <form action="{{ url_for('CovidPrediction')}}" method="POST">
         <div class="input-group text-center">
           <span class="text-center text-dark input-group-text"
@@ -60,8 +70,8 @@
             required
             class="form-control"
             type="number"
-            min="100"
-            max="130"
+            min="0"
+            max="200"
             step="1"
             placeholder="Blood Pressure of Patient (eg. 120 mmHg)"
             inputmode="numeric"
@@ -133,11 +143,7 @@
           />
         </div>
         <div class="input-group"></div>
-        <button
-          class="btn btn-primary text-center"
-          type="submit"
-          name="predict"
-        >
+        <button class="my-cta-button" type="submit" name="predict">
           Predict
         </button>
         <div class="input-group"></div>
