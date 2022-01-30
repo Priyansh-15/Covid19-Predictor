@@ -1,5 +1,5 @@
 .header-dark {
-  background: linear-gradient(to right, #663300 0%, #990099 100%);
+  background: linear-gradient(to right, #663300 0%, #990099 70%);
   animation: change-gradient 5s ease-in-out infinite;
   background-size: cover;
   padding-bottom: 80px;
@@ -33,7 +33,7 @@
 .container {
   padding: 30px;
   position: relative;
-  background: linear-gradient(to right, #663300 0%, #990099 100%);
+  background: linear-gradient(to right, #663300 0%, #990099 70%);
   text-align: center;
   background-size: 500% 500%;
   animation: change-gradient 5s ease-in-out infinite;
@@ -240,7 +240,7 @@
 }
 
 .header-dark .hero .ratio iframe {
-  background: linear-gradient(to right, #663300 0%, #990099 100%);
+  background: linear-gradient(to right, #663300 0%, #990099 70%);
   animation: change-gradient 5s ease-in-out infinite;
 }
 @keyframes change-gradient {
