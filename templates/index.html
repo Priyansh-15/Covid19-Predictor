@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Covid 19 Predictor</title>
+    <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Bitter:400,700"
+    />
+    <link rel="stylesheet" href="static/css/Header-Dark.css" />
+    <link rel="stylesheet" href="static/css/styles.css" />
+  </head>
+
+  <body>
+    <header class="header-dark">
+      <h1 class="display-4 text-center text-white">Covid 19 Predictor</h1>
+      <form action="{{ url_for('CovidPrediction')}}" method="POST">
+        <div class="input-group text-center">
+          <span class="text-center text-dark input-group-text"
+            >Body Temperature</span
+          ><input
+            name="query1"
+            id="query1"
+            required
+            class="form-control"
+            type="number"
+            min="96"
+            max="104"
+            step="1"
+            placeholder="Temperature of Body of Patient (eg.97)"
+            style="text-align: center"
+          />
+        </div>
+        <div class="input-group">
+          <span class="input-group-text">Breathing Rate</span
+          ><input
+            name="query2"
+            id="query2"
+            required
+            class="form-control"
+            type="number"
+            min="10"
+            max="18"
+            step="1"
+            placeholder="Breathing rate of Patient (eg. 14/min)"
+            inputmode="numeric"
+            style="text-align: center"
+          />
+        </div>
+        <div class="input-group">
+          <span class="input-group-text">Blood Pressure</span
+          ><input
+            name="query3"
+            id="query3"
+            required
+            class="form-control"
+            type="number"
+            min="100"
+            max="130"
+            step="1"
+            placeholder="Blood Pressure of Patient (eg. 120 mmHg)"
+            inputmode="numeric"
+            style="text-align: center"
+          />
+        </div>
+        <div class="input-group">
+          <span class="input-group-text">Oxygen Level</span
+          ><input
+            name="query4"
+            id="query4"
+            required
+            class="form-control"
+            type="number"
+            min="85"
+            max="99"
+            step="1"
+            placeholder="Oxygen level of Patient (eg. 90%)"
+            inputmode="numeric"
+            style="text-align: center"
+          />
+        </div>
+        <div class="input-group">
+          <span class="input-group-text">Vaccinated(Y/N)</span
+          ><input
+            name="query5"
+            id="query5"
+            required
+            class="form-control"
+            type="number"
+            min="0"
+            max="1"
+            step="1"
+            placeholder="Patient is Vaccinated (Yes-1 or No-0)"
+            inputmode="numeric"
+            style="text-align: center"
+          />
+        </div>
+        <div class="input-group">
+          <span class="input-group-text">Cough/Cold(Y/N)</span
+          ><input
+            name="query6"
+            id="query6"
+            required
+            class="form-control"
+            type="number"
+            min="0"
+            max="1"
+            step="1"
+            placeholder="Patient having Cough/Cold (Yes-1 or No-0)"
+            inputmode="numeric"
+            style="text-align: center"
+          />
+        </div>
+        <div class="input-group">
+          <span class="input-group-text">Age</span
+          ><input
+            name="query7"
+            id="query7"
+            required
+            class="form-control"
+            type="number"
+            min="1"
+            max="100"
+            step="1"
+            placeholder="Patient Age (eg. 30 years old)"
+            inputmode="numeric"
+            style="text-align: center"
+          />
+        </div>
+        <div class="input-group"></div>
+        <button
+          class="btn btn-primary text-center"
+          type="submit"
+          name="predict"
+        >
+          Predict
+        </button>
+        <div class="input-group"></div>
+      </form>
+      <div class="input-group-text">
+        <textarea
+          class="form-control-lg"
+          style="min-width: 100%; text-align: center"
+          placeholder="Covid 19 Positive/Negative"
+          name="output1"
+        >
+{{output1}}</textarea
+        >
+      </div>
+      <div class="input-group-text">
+        <textarea
+          class="form-control-lg"
+          style="min-width: 100%; text-align: center"
+          placeholder="Predictor Accuracy"
+          name="output2"
+        >
+{{output2}}</textarea
+        >
+      </div>
+    </header>
+    <script src="static/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
