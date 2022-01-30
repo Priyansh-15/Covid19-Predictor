@@ -23,10 +23,10 @@
           <span class="heading_font">Covid 19 Predictor</span>
         </h2>
         <div class="description">
-          <h3>
+          <p>
             Predictor to Give Confirmation on Whether You are having Covid 19
             Symptoms
-          </h3>
+          </p>
         </div>
       </div>
       <form action="{{ url_for('CovidPrediction')}}" method="POST">
@@ -143,7 +143,12 @@
           />
         </div>
         <div class="input-group"></div>
-        <button class="my-cta-button" type="submit" name="predict">
+        <button
+          class="my-cta-button"
+          class="center"
+          type="submit"
+          name="predict"
+        >
           Predict
         </button>
         <div class="input-group"></div>

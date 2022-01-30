@@ -1,8 +1,19 @@
 .header-dark {
   background: linear-gradient(to right, #663300 0%, #990099 100%);
-
+  animation: change-gradient 5s ease-in-out infinite;
   background-size: cover;
   padding-bottom: 80px;
+}
+@keyframes change-gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -25,7 +36,7 @@
   background: linear-gradient(to right, #663300 0%, #990099 100%);
   text-align: center;
   background-size: 500% 500%;
-  animation: change-gradient 10s ease-in-out infinite;
+  animation: change-gradient 5s ease-in-out infinite;
 }
 
 @keyframes change-gradient {
@@ -42,6 +53,15 @@
 
 .container-heading {
   margin: 0;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .heading_font {
@@ -221,4 +241,16 @@
 
 .header-dark .hero .ratio iframe {
   background: linear-gradient(to right, #663300 0%, #990099 100%);
+  animation: change-gradient 5s ease-in-out infinite;
+}
+@keyframes change-gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
 }
