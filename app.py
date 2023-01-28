@@ -22,7 +22,7 @@ def CovidPrediction():
 
     X_pred = pd.DataFrame(X_pred, columns=['Body_Temp','Breath_Rate','BloodPressure','Oxygen_Level','Vaccinated','Cough_Cold','Age'])
 
-    savename = "covidmodel.sav"
+    savename = "dataset/covidmodel.sav"
 
     load_model = pickle.load(open(savename, "rb"))
 
